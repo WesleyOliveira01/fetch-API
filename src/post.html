@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="../js/main.js" defer></script>
+    <title>FETCH</title>
+  </head>
+  <body>
+    <header
+      class="bg-sky-600 text-center text-white font-bold flex justify-center items-center p-5"
+    >
+      <h1 class="text-3xl">Post do blog</h1>
+    </header>
+
+    <p id="loading">Carregando...</p>
+    <div id="posts" class=" hide my-0 mx-auto w-9/12">
+
+        
+        <div id="posts-container"></div>
+        <a href="index.html" class="bg-sky-600 rounded-md h-8 text-white font-bold flex p-4 justify-center items-center w-1/6 m-4 ">Voltar</a>
+
+        <div id="comments-container">
+      
+        </div>
+        <div class="w-1/2 my-8 mx-auto ">
+            <h2 class="text-sky-600">Comentarios:</h2>
+            <form id="comment-form" >
+              <div class="flex flex-col ">
+                <label for="email">Seu e-mail:</label>
+                <input
+                  class="my-4 border-2 border-black p-2 rounded-lg"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  required
+                />
+              </div>
+      
+              <div class="flex flex-col">
+                <label for="body">Seu comentario:</label>
+                <textarea
+                  class="my-4 border-2 border-black p-2 rounded-lg""
+                  cols="5"
+                  rows="6"
+                  placeholder="Digite seu comentario"
+                  required
+                  id="body-comment"
+                > </textarea>
+              </div>
+              <input type="submit" value="Enviar" class="bg-sky-600 w-1/4 rounded-md h-8 text-white font-bold cursor-pointer">
+            </form>
+          </div>
+
+    </div>
+
+    
+
+   
+  </body>
+</html>
